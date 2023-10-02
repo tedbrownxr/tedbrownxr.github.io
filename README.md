@@ -1,1 +1,1 @@
-# tedbrownxr.github.io
+Testing deployment of Blazor web assembly
