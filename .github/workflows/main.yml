@@ -30,11 +30,11 @@ jobs:
         html_path: ${{ env.PUBLISH_DIR }}/index.html
         base_href: /tedbrownxr.github.io/
 
-    - name: GitHub Pages [prev secrets.GITHUB_TOKEN]
+    - name: GitHub Pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v1.5.1
       with:
         target_branch: gh-pages
         build_dir: ${{ env.PUBLISH_DIR }}
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
